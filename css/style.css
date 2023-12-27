@@ -40,6 +40,7 @@ main {
     width: 100%;
     background-color: var(--bg-color);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -188,4 +189,25 @@ form button {
 form button:hover {
     background-color: var(--main-color);
     color: var(--bg-color);
+}
+
+.footer {
+    width: 100%;
+    height: 40px;
+    background-color: #0c0a1f;
+    margin-top: auto;
+    color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+    font-size: 1em;
+    padding-left: 20px;
+}
+
+.footer ion-icon {
+    font-size: 1em;
+    padding-right: 20px;
 }
