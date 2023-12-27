@@ -4,6 +4,7 @@
     --bg-color: #060510;
     --main-color: #5266a3;
     --accent-color: #11b5e4;
+    --error-color: #db5461;
 }
 
 * {
@@ -116,8 +117,29 @@ form {
     font-weight: 500;
 }
 
-.error {
+.input-box p,
+.input-box ul,
+.terms-conditions p{
     padding-left: 5px;
+    font-size: .7em;
+    color: var(--error-color);
+    list-style: none;
+    display: none;
+}
+
+.error p,
+.error ul {
+    display: block;
+}
+
+.input-box.error input:invalid~label {
+    color: var(--error-color);
+    top: -6px;
+}
+
+.input-box.error,
+.input-box.error:has(> input:focus){
+    border-bottom: 2px solid var(--error-color);
 }
 
 .submit {
@@ -142,6 +164,11 @@ form {
 
 .terms-conditions label {
     margin-left: 10px;
+}
+
+.terms-conditions p {
+    padding: 0;
+    margin: 5px 0;
 }
 
 form button {
