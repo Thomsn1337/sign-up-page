@@ -12,40 +12,46 @@
     <main>
         <div class="background"></div>
         <div class="main">
-            <form>
-                <h2>Sign up</h2>
-                <div class="first-name">
-                    <label for="firstname">First name</label>
-                    <input type="text" name="firstname" id="firstname">
-                    <div class="error"></div>
+            <div class="wrapper">
+                <div class="title">
+                    <h2>Sign up</h2>
                 </div>
-                <div class="last-name">
-                    <label for="lastname">Last name</label>
-                    <input type="text" name="lastname" id="lastname">
-                    <div class="error"></div>
-                </div>
-                <div class="user-name">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" id="username">
-                    <div class="error"></div>
-                </div>
-                <div class="email">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                    <div class="error"></div>
-                </div>
-                <div class="pw">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
-                    <div class="error"></div>
-                </div>
-                <div class="pw-repeat">
-                    <label for="password-repeat">Repeat password</label>
-                    <input type="password" name="password-repeat" id="password-repeat">
-                    <div class="error"></div>
-                </div>
-                <button type="submit">Sign up</button>
-            </form>
+                <form>
+                    <div class="input-wrapper">
+                        <div class="input-box">
+                            <input type="text" name="firstname" id="firstname" required>
+                            <label for="firstname">First name</label>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" name="lastname" id="lastname" required>
+                            <label for="lastname">Last name</label>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" name="username" id="username" required>
+                            <label for="username">Username</label>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" name="email" id="email" required>
+                            <label for="email">Email</label>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" name="password" id="password" required>
+                            <label for="password">Password</label>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" name="password-repeat" id="password-repeat" required>
+                            <label for="password-repeat">Repeat password</label>
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                    <button type="submit">Sign up</button>
+                </form>
+            </div>
         </div>
     </main>
 </body>
